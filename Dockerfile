@@ -5,7 +5,7 @@ ARG scala_version=2.12
 
 MAINTAINER wurstmeister
 
-RUN apk add --update unzip wget curl docker jq coreutils
+RUN apk add --update unzip wget curl docker jq coreutils screen vim
 
 ENV KAFKA_VERSION=$kafka_version SCALA_VERSION=$scala_version
 ADD download-kafka.sh /tmp/download-kafka.sh
